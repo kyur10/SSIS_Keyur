@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="228"
-  DTS:VersionGUID="{FC88718A-307B-4836-A89C-E52283997E94}">
+  DTS:VersionBuild="230"
+  DTS:VersionGUID="{F337A9DE-8255-473F-ABDB-055D1316C741}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3693,37 +3693,37 @@ WHERE
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Handle Error\OLE DB Destination"
-          TopLeft="97.8461523881325,496.307684912131" />
-        <NodeLayout
-          Size="136.8,41.6"
-          Id="Package\Handle Error\Future Login"
-          TopLeft="494.923069548148,323.15384275982" />
-        <NodeLayout
-          Size="120,41.6"
-          Id="Package\Handle Error\Union All"
-          TopLeft="254.692303897097,407.692301617219" />
-        <NodeLayout
-          Size="153.6,41.6"
-          Id="Package\Handle Error\Conditional Split"
-          TopLeft="275.230765129511,229.384611966518" />
+          Size="128,41.6"
+          Id="Package\Handle Error\invalid age"
+          TopLeft="335.307687311218,328.692304215752" />
         <NodeLayout
           Size="137.6,41.6"
           Id="Package\Handle Error\Invalid Email"
           TopLeft="83.8333284747271,334.599997678002" />
         <NodeLayout
-          Size="152,41.6"
-          Id="Package\Handle Error\OLE DB Source"
-          TopLeft="106.230767647807,114.999998286366" />
+          Size="120,41.6"
+          Id="Package\Handle Error\Union All"
+          TopLeft="254.692303897097,407.692301617219" />
         <NodeLayout
-          Size="128,41.6"
-          Id="Package\Handle Error\invalid age"
-          TopLeft="335.307687311218,328.692304215752" />
+          Size="171.2,41.6"
+          Id="Package\Handle Error\OLE DB Destination"
+          TopLeft="97.8461523881325,496.307684912131" />
         <NodeLayout
           Size="174.4,41.6"
           Id="Package\Handle Error\Future Register Date"
           TopLeft="656.999990209937,324.999995157123" />
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Handle Error\OLE DB Source"
+          TopLeft="106.230767647807,114.999998286366" />
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\Handle Error\Conditional Split"
+          TopLeft="275.230765129511,229.384611966518" />
+        <NodeLayout
+          Size="136.8,41.6"
+          Id="Package\Handle Error\Future Login"
+          TopLeft="494.923069548148,323.15384275982" />
         <EdgeLayout
           Id="Package\Handle Error.Paths[Union All Output 1]"
           TopLeft="314.692303897097,449.292301617219">
@@ -3750,6 +3750,40 @@ WHERE
                     Point3="-131.246151508964,27.5076916474559" />
                   <mssgle:LineSegment
                     End="-131.246151508964,39.5153832949119" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Handle Error.Paths[OLE DB Source Output]"
+          TopLeft="182.230767647807,156.599998286366">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="169.799997481704,72.784613680152"
+              Start="0,0"
+              End="169.799997481704,65.284613680152">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.392306840076" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.392306840076"
+                    Point2="0,36.392306840076"
+                    Point3="4,36.392306840076" />
+                  <mssgle:LineSegment
+                    End="165.799997481704,36.392306840076" />
+                  <mssgle:CubicBezierSegment
+                    Point1="165.799997481704,36.392306840076"
+                    Point2="169.799997481704,36.392306840076"
+                    Point3="169.799997481704,40.392306840076" />
+                  <mssgle:LineSegment
+                    End="169.799997481704,65.284613680152" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4074,40 +4108,6 @@ WHERE
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Handle Error.Paths[OLE DB Source Output]"
-          TopLeft="182.230767647807,156.599998286366">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="169.799997481704,72.784613680152"
-              Start="0,0"
-              End="169.799997481704,65.284613680152">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.392306840076" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.392306840076"
-                    Point2="0,36.392306840076"
-                    Point3="4,36.392306840076" />
-                  <mssgle:LineSegment
-                    End="165.799997481704,36.392306840076" />
-                  <mssgle:CubicBezierSegment
-                    Point1="165.799997481704,36.392306840076"
-                    Point2="169.799997481704,36.392306840076"
-                    Point3="169.799997481704,40.392306840076" />
-                  <mssgle:LineSegment
-                    End="169.799997481704,65.284613680152" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -4390,7 +4390,7 @@ WHERE
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>

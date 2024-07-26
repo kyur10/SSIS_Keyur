@@ -76,7 +76,7 @@ END
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'stg.Users_Errors') AND type in (N'U'))
 BEGIN
 CREATE TABLE stg.Users_Errors (
-    StgID INT IDENTITY(1,1) PRIMARY KEY,
+    StgID INT PRIMARY KEY,
     UserID INT,
     FullName NVARCHAR(255),
     Age INT,

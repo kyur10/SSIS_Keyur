@@ -9,10 +9,10 @@ The package addresses common data issues such as incorrect data formats, duplica
 
 #### Required Tools 
 
-- *SQL Server Integration Services (SSIS)* 
-- *SQL Server* 
-- *Visual Studio:* 
+- Visual Studio: 
   - Install `SQL Server Integration Services Projects` extension in Visual studio 
+- SQL Server 
+- SQL Server Management Studio (SSMS) **OR** Azure Data Studio
 
 #### Steps to run the package
 
@@ -26,8 +26,18 @@ The package addresses common data issues such as incorrect data formats, duplica
 2. **Open the SSIS Project:**
    - Open the SSIS project in Visual Studio by double-clicking the `SSIS1.sln` file.
 
-3. **Run SQL script:**
-   - Open SQL server and after connecting, execute `\src\mint_ssis.sql` script.
+3. **Setup SQL Server:**
+   - Connect to SQL Server using Azure Data Studio or SQL Server Management Studio (SSMS). 
+   - Restore the backup from `\src\backup_ssis.bak`
+      ```sql 
+      USE master 
+      RESTORE DATABASE KoreAssignment_Keyur_Maheria
+      FROM DISK='[path..]\src\backup_ssis.bak'
+      WITH MOVE N'KoreAssignment_Keyur_Maheria' TO N'[path..]\src\backup_ssis.mdf',
+      MOVE N'KoreAssignment_Keyur_Maheria_log' TO N'[path..]\src\backup_ssis.ldf'
+      ```
+   - **OR** 
+   - execute `\src\mint_ssis.sql` script
 
 4. **Configure Connection Manager:**
    - Select `Native OLE DB\Microsoft OLE DB Driver for SQL Server` for Provider in Connection Manager.
